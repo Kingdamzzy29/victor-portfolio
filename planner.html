@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academic planner | Ojolade Victor Oladamilare</title>
+  <meta name="description" content="A simple planner to add, complete and delete study tasks.">
+  <meta name="theme-color" content="#0f2a4a">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Ojolade Victor Oladamilare, home">
+        <img src="images/avatar.jpg" alt="" width="42" height="42">
+        <span>Ojolade Victor Oladamilare<small>Student portfolio</small></span>
+      </a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About me</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-title">
+      <div class="container">
+        <p class="eyebrow">Academic planner</p>
+        <h1>Plan your study tasks</h1>
+        <p class="lead">Add a task, tick it when it is done, and delete it when you no longer need it. Your tasks stay saved on this device.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid--2">
+        <div class="card">
+          <h2>Add a task</h2>
+          <form class="form" id="task-form" novalidate>
+            <div class="field">
+              <label for="task-title">Task</label>
+              <input id="task-title" type="text" placeholder="Example: Revise Chapter 3" maxlength="100" autocomplete="off">
+              <p class="error" id="task-error" aria-live="polite"></p>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="task-category">Category</label>
+                <select id="task-category">
+                  <option>Study</option>
+                  <option>Assignment</option>
+                  <option>Exam</option>
+                  <option>Personal</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="task-due">Due date (optional)</label>
+                <input id="task-due" type="date">
+              </div>
+            </div>
+            <button class="btn" type="submit">Add task</button>
+          </form>
+        </div>
+
+        <div>
+          <h2>My tasks</h2>
+          <p id="progress-text" aria-live="polite">0 of 0 tasks complete</p>
+          <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+          <div class="filters" role="group" aria-label="Filter tasks">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="open" aria-pressed="false">Open</button>
+            <button type="button" data-filter="done" aria-pressed="false">Completed</button>
+            <button type="button" id="clear-done">Clear completed</button>
+          </div>
+          <ul class="task-list" id="task-list"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year">2026</span> Ojolade Victor Oladamilare. All rights reserved.</p>
+      <p><a href="mailto:victordami222@gmail.com">victordami222@gmail.com</a> &middot; <a href="tel:08139466292">08139466292</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>

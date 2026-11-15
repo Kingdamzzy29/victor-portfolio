@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Ojolade Victor Oladamilare</title>
+  <meta name="description" content="Contact Ojolade Victor Oladamilare.">
+  <meta name="theme-color" content="#0f2a4a">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Ojolade Victor Oladamilare, home">
+        <img src="images/avatar.jpg" alt="" width="42" height="42">
+        <span>Ojolade Victor Oladamilare<small>Student portfolio</small></span>
+      </a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About me</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html">Planner</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-title">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Get in touch</h1>
+        <p class="lead">Send me a message and I'll get back to you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid--2">
+        <div class="card">
+          <h2>Send a message</h2>
+          <form class="form" id="contact-form" novalidate>
+            <div class="notice notice--warn" id="form-summary" role="alert"></div>
+            <div class="field">
+              <label for="c-name">Name</label>
+              <input id="c-name" type="text" autocomplete="name" aria-describedby="c-name-error">
+              <p class="error" id="c-name-error"></p>
+            </div>
+            <div class="field">
+              <label for="c-email">Email address</label>
+              <input id="c-email" type="email" autocomplete="email" aria-describedby="c-email-error">
+              <p class="error" id="c-email-error"></p>
+            </div>
+            <div class="field">
+              <label for="c-phone">Phone number (digits only)</label>
+              <input id="c-phone" type="tel" inputmode="numeric" autocomplete="tel" aria-describedby="c-phone-error">
+              <p class="error" id="c-phone-error"></p>
+            </div>
+            <div class="field">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" aria-describedby="c-message-error"></textarea>
+              <p class="error" id="c-message-error"></p>
+            </div>
+            <button class="btn" type="submit">Check and prepare message</button>
+            <div class="notice" id="form-success" role="status">
+              <strong>Thank you. Your details look good.</strong><br>
+              Click below to open your email app with the message ready to send.<br>
+              <a class="btn btn--amber" id="mail-link" href="mailto:victordami222@gmail.com" style="margin-top:0.7rem">Open email</a>
+            </div>
+          </form>
+        </div>
+
+        <div class="card">
+          <h2>Other ways to reach me</h2>
+          <ul class="clean">
+            <li><strong>Email:</strong> <a href="mailto:victordami222@gmail.com">victordami222@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:08139466292">08139466292</a></li>
+            <li><strong>State of origin:</strong> Oyo State</li>
+          </ul>
+          <p>I can help with solar installation, house wiring and graphic designing.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year">2026</span> Ojolade Victor Oladamilare. All rights reserved.</p>
+      <p><a href="mailto:victordami222@gmail.com">victordami222@gmail.com</a> &middot; <a href="tel:08139466292">08139466292</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
